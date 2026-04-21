@@ -9,7 +9,6 @@ This project formulates **multi-stage power trading** as a **two-step sequential
 
 to determine trading positions across two stages and maximise risk-adjusted profit under position constraints. 
 
-
 ## Problem Formulation
 
 Considering a two-stage trading process:
@@ -102,7 +101,7 @@ $$
 c_{da,t}^{\text{raw}} = \frac{1}{\mathrm{Std}(e_{da,t-w+1:t}) + \varepsilon}
 $$
 
-where (\varepsilon) is a small positive constant for numerical stability. In the implementation, the rolling window is set to:
+where $\varepsilon$ is a small positive constant for numerical stability. In the implementation, the rolling window is set to:
 
 $$
 w = 96 \times 7
@@ -369,3 +368,44 @@ The observation vector is effectively **11-dimensional**:
 * 6 market-related features.
 
 This should match the environment definition in the code. 
+
+
+## EDA & Data Visualisation
+Examples of  EDA & Data Visualisation: price spread, intraday profile, cross-day weather change, orderbook & slippage, residual analysis
+* Price & Price Prediction
+<br>
+<div align="center">
+  <img width="712" height="280" alt="cdbbc624-063b-4855-ab02-a673cb3f1b62" src="https://github.com/user-attachments/assets/51b882e9-92ff-4e5b-9a02-1f924b5f5cf7" /><br>
+  <img width="712" height="280" alt="f678bb81-8b70-4e7e-ac10-dcf44a7171be" src="https://github.com/user-attachments/assets/ae710c9e-41b5-40e8-9581-9f61a4538537" /><br>
+  <img width="1000" height="352" alt="361c3de7-8d20-41eb-8c76-26204e70eeb1" src="https://github.com/user-attachments/assets/6f6800cd-38b2-4b49-a235-0bd349abd2b4" /><br>
+  <img width="1000" height="352" alt="6c4a0791-eada-4d02-81e9-c15b6085c64b" src="https://github.com/user-attachments/assets/db3a4beb-8e4d-4946-b3ee-e04346d23182" />
+</div>  
+
+<br>
+* Weather Features
+<br>
+<br>
+<div align="center">
+  <img width="1113" height="139" alt="43141745-0335-456a-85b3-8de55bacd7dc" src="https://github.com/user-attachments/assets/c9d592d8-4399-4875-b2a9-f5863af5c684" /> <br>
+  most negative bin
+  <img width="867" height="198" alt="1b78ccc7-4525-4fea-a40a-a4f694118c2d" src="https://github.com/user-attachments/assets/a1333890-aef1-411f-bbb4-188e0a55580f" /><br>
+  <img width="1280" height="703" alt="d045595c-2a82-4331-8017-9387c4352c4c" src="https://github.com/user-attachments/assets/5786ba2a-35fd-42fb-b7b8-6d688cd9ed0f" /><br>
+  <img width="436" height="280" alt="f011aa47-90f0-453c-bdcb-993980ef539b" src="https://github.com/user-attachments/assets/6ca594a2-6814-4e35-9ef9-63ab70974f5c" />
+</div>
+<br>
+* Price Curve Samples & Analysis
+<br>
+<br>
+<div align="center">
+  <img width="1001" height="424" alt="dd9b4e8e-2721-497f-b9e9-06c070b3bbe4" src="https://github.com/user-attachments/assets/fd450690-83fb-49b4-b17a-de6179e8e9e2" />
+  <img width="1001" height="424" alt="9a24392b-6805-49d8-918c-2327edf31cd0" src="https://github.com/user-attachments/assets/abb66312-e392-41e0-8693-8b8624fa8c84" />
+  <img width="1001" height="424" alt="07c6b10f-8f94-44b7-bd57-48520b1b6b1e" src="https://github.com/user-attachments/assets/867bf40d-691e-4509-862e-70cd8520b21d" />
+</div> 
+
+<br>
+<br>
+  
+<img width="2912" height="1464" alt="ik0u2iik0u2iik0u" src="https://github.com/user-attachments/assets/35053f65-2212-4d94-b236-402d27c5af8f" />
+<br>
+<img width="2048" height="2048" alt="2keh242keh242keh" src="https://github.com/user-attachments/assets/a43801f2-4afa-477b-92ba-00718581a9c9" />
+
