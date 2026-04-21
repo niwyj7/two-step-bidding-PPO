@@ -146,10 +146,10 @@ The state contains weather features and market-related features.
 $$
 x_t^{\mathrm{weather}} =
 \left[
-\mathrm{win100spd}_t,\,
-d2_t,\,
-ssrd_t,\,
-tcc_t,\,
+\mathrm{win100spd}_t\,
+d2_t\,
+ssrd_t\,
+tcc_t\,
 hour_t
 \right]
 $$
@@ -159,11 +159,11 @@ $$
 $$
 x_t^{\text{market}} =
 [
-\hat{s}*{d2,t},,
-c*{d2,t},,
-\hat{s}*{da,t},,
-c*{da,t},,
-q_{d2},,
+\hat{s}*{d2,t},
+c*{d2,t},
+\hat{s}*{da,t},
+c*{da,t},
+q_{d2},
 \text{step}
 ]
 $$
@@ -335,7 +335,7 @@ L^{\mathrm{CLIP}}(\theta)=
 \mathbb{E}_t
 \left[
 \min \left(
-r_t(\theta)\hat{A}_t,\,
+r_t(\theta)\hat{A}_t\,
 \mathrm{clip}\!\left(r_t(\theta), 1-\epsilon, 1+\epsilon\right)\hat{A}_t
 \right)
 \right]
@@ -368,5 +368,4 @@ The observation vector is effectively **11-dimensional**:
 * 5 weather features,
 * 6 market-related features.
 
-This matches the environment definition in the code. A comment in the implementation mentions “10 dimensions”, but the actual concatenated state is 11-dimensional. This should be corrected in the documentation for consistency. 
-
+This should match the environment definition in the code. 
