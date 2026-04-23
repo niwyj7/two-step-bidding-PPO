@@ -376,6 +376,7 @@ Examples of  EDA & Data Visualisation: price spread, intraday profile, cross-day
 <br>
 <div align="center">
   <img width="712" height="280" alt="cdbbc624-063b-4855-ab02-a673cb3f1b62" src="https://github.com/user-attachments/assets/51b882e9-92ff-4e5b-9a02-1f924b5f5cf7" /><br>
+  Below shows systematic estimation error:
   <img width="712" height="280" alt="f678bb81-8b70-4e7e-ac10-dcf44a7171be" src="https://github.com/user-attachments/assets/ae710c9e-41b5-40e8-9581-9f61a4538537" /><br>
   <img width="1000" height="352" alt="361c3de7-8d20-41eb-8c76-26204e70eeb1" src="https://github.com/user-attachments/assets/6f6800cd-38b2-4b49-a235-0bd349abd2b4" /><br>
   <img width="1000" height="352" alt="6c4a0791-eada-4d02-81e9-c15b6085c64b" src="https://github.com/user-attachments/assets/db3a4beb-8e4d-4946-b3ee-e04346d23182" />
