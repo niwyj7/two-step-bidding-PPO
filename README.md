@@ -1,4 +1,6 @@
 ## Project Overview
+Note: All materials **exclude** confidential and employer-specific business logic, and are permitted for sharing.
+
 
 This project formulates **multi-stage power trading** as a **two-step sequential decision-making problem** and solves it with **Proximal Policy Optimisation (PPO)**. The agent integrates:
 
